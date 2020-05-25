@@ -1,0 +1,32 @@
+div.news {
+    font-family: arial;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .news__item {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 10px;
+  }
+  
+  .news__item + .news__item {
+    border-top: 1px solid #ccc;
+  }
+  
+  .news__item:nth-child(2n) {
+     background: #eee;
+  }
+  
+  .news__item:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .news__item-title {
+    font-size: 20px;
+    margin: 0 0 .25em;  
+  }
+  
+  .news__item-link {
+   color: green;
+  }
