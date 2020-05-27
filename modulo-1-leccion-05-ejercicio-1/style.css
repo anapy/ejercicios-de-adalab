@@ -1,0 +1,25 @@
+.container {
+  border: solid darkmagenta;
+  width: 500px;
+  height: 500px;
+  display: flex;
+
+}
+
+.item {
+    border: 2px solid rgb(223, 78, 163);
+    background-color: lightpink;
+    align-items: stretch;
+}
+
+/*Pone el texto en columnas
+Eje principal X*/
+.container {
+    flex-direction: row;
+  }
+  
+/*Pone el texto en filas
+Eje principal Y*/
+  .container {
+    flex-direction: column;
+  }
