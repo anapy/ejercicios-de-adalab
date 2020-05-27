@@ -1,0 +1,48 @@
+.header,
+.main,
+.footer {
+  border: 1px solid red;
+}
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("") format("woff2"), url("") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("") format("woff2"), url("") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+:root {
+  /*COLORS*/
+  --primary-color: black;
+  --secondary-color: #4bb84a;
+  --light-color: white;
+  /*FONTS*/
+  --primary-font: Circular, Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-family: var(--primary-font);
+  font-size: 16px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.menu a {
+  display: inline-block;
+  /* padding: 8px; */
+}
