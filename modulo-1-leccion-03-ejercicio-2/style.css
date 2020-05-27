@@ -1,0 +1,27 @@
+/*Se expande sin márgenes debajo*/
+.uno {
+  display: block;
+  background-color: cadetblue;
+}
+/*Deja espacios por arriba y abajo*/
+.dos {
+  display: inline; 
+  background-color: lightpink;
+}
+
+.dos_2 {
+  display: inline; 
+  background-color: lightgreen;
+}
+
+/*Deja espacios por arriba y abajo igual que inline*/
+.tres{
+  display: inline-block;
+  background-color: cadetblue;
+}
+
+/*Desaparece*/
+.cuatro{
+  display: none;
+  background-color: rgb(35, 155, 61);
+}

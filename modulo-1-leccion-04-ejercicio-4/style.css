@@ -1,0 +1,19 @@
+.container {
+  height: 1500px;
+  width: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  order: 1;
+  width: 500px;
+  text-align: center;
+}
+
+.item-3 {
+  width: 1000px;
+  order: 0;
+}

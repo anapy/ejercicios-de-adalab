@@ -1,0 +1,15 @@
+.container {
+    border: solid purple;
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.item {
+    padding: 20px;
+    align-items: center;
+}

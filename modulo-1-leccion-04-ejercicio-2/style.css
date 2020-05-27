@@ -1,0 +1,22 @@
+.container {
+  border: solid darkmagenta;
+  width: 900px;
+  height: 418px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+ 
+}
+
+.item {
+  border: 2px solid rgb(223, 78, 163);
+  background-color: lightskyblue;
+  width: 200px;
+  height: 100px;
+  align-items: center;
+}
+
+
+
