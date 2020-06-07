@@ -1,0 +1,14 @@
+.box {
+  background: red;
+}
+
+@media all and (min-width: 768px) {
+  .box {
+    background: blue;
+  }
+}
+@media all and (min-width: 1140px) {
+  .box {
+    background: rgb(235, 183, 15);
+  }
+}
