@@ -1,0 +1,48 @@
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightpink;
+  color: white;
+  grid-column: span 12;
+}
+
+.menu {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: purple;
+  color: white;
+  grid-column: span 5;
+}
+
+.content {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(231, 69, 69);
+  color: white;
+  grid-column: span 7;
+
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(155, 198, 209);
+  color: white;
+  grid-column: span 12;
+}
+

@@ -1,0 +1,52 @@
+
+.wrapper {
+height: 100vh;
+}
+
+.one{
+  border: 2px solid white;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightpink;
+  color: white;
+}
+
+.dos {
+  border: 2px solid white;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: purple;
+  color: white
+}
+
+.cuatro {
+  border: 2px solid white;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(231, 69, 69);
+  color: white;
+}
+
+.seis {
+  border: 2px solid white;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(155, 198, 209);
+}
+
+.doce {
+  border: 2px solid white;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(89, 212, 120);
+}
