@@ -19,7 +19,8 @@ function ticketIVA(price) {
 }
 console.log(ticketIVA(10));
 
-/**EJERCICIO 4 -- Función para calcular un ticket con IVA */
+
+/**EJERCICIO 4 -- Función para calcular número pares o impares */
 function even(num) {
     if(num % 2 == 0) {
         return true;
