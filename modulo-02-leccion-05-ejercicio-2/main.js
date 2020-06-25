@@ -2,10 +2,12 @@
 
 /**EJERCICIO 2 -- ¿Cómo te llamas? */
 const button = document.querySelector('.button');
+const name = document.querySelector('.name');
+const greet = document.querySelector('.greetings');
 
-function changeText() {
-    let text = document.querySelector('.name');
-    const name = document.querySelector('.value');
-    console.log(text.value);
+function handlerChangeText() {
+    console.log(`Hola ${name.value}`);
+    greet.innerHTML = (`Hola ${name.value}`);
+
 }
-button.addEventListener('click', changeText);
+button.addEventListener('click', handlerChangeText);
