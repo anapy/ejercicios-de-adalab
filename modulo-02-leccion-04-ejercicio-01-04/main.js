@@ -1,3 +1,5 @@
+'use strict';
+
 /**EJERCICIO 1 -- Función para calcular multiplicaciones */
 function multiplication(a, b) {
     return a * b;
