@@ -10,6 +10,7 @@ const pearBox = {
     addPear: function() { 
         this.actNum = parseInt(this.actNum);
         this.actNum++;
+        console.log(`Hay ${this.actNum}`);
     }, 
 
     removePear: function() { 
@@ -22,5 +23,10 @@ const pearBox = {
     } 
 }
 
+const text = document.querySelector('.text');
+pearBox.addPear();
+pearBox.addPear();
+pearBox.addPear();
+pearBox.resetPear();
 
-
+text.innerHTML = `Hay ${pearBox.actNum}`;
