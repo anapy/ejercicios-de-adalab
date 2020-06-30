@@ -8,6 +8,7 @@ function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
+//this way we are calling getRandomNumber() inside writeThis, to generate a random number for each word to repeat
 writeThis('patata', getRandomNumber(10));
 writeThis('aguacate', getRandomNumber(10));
 writeThis('Pizza', getRandomNumber(10));
@@ -30,6 +31,8 @@ const myWordList = [
     total: 4
   }
 ];
+
+//This fuction iterates the array and log by console variable text the number given in variable total
 function writeMyArray(myWordList) {
   for(const word of myWordList) {
     writeThis(word.text, word.total);
