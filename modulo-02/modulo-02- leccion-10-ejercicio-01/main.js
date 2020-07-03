@@ -1,11 +1,20 @@
-function getDogImage() {
-  fetch("https://dog.ceo/api/breeds/image/random")
+//Ejercicio 1 -- Número aleatorio parte A
+function getNumber() {
+  fetch("https://api.rand.fun/number/integer")
     .then(response => response.json())
     .then(data => {
-      const img = document.querySelector("img");
-      img.src = data.message;
-      img.alt = "Un perro";
+      document.querySelector('.js-result').innerHTML = data.result
     });
 }
-const btn = document.querySelector(".js-dog");
-btn.addEventListener("click", getDogImage);
+document.querySelector('.js-emoji').addEventListener("click", getNumber);
+
+//Ejercicio 1 -- String con especificaciones parte B
+function getString() {
+  fetch("https://api.rand.fun/text/password?lenght=20")
+    .then(response => response.json())
+    .then(data => {
+      document.querySelector('.js-result2').innerHTML = data.result
+    });
+}
+document.querySelector('.js-emoji').addEventListener("click", getNumber);
+document.querySelector('.js-emoji').addEventListener("click", getString);
