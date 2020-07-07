@@ -5,11 +5,13 @@ const marks = [5, 4, 6, 7, 9];
 const newMarks = marks.map(mark => mark + 1);
 console.log(newMarks);
 
+
 //EJERCICIOS 02 -- Saludar es de buena educación //
 const names = ['María', 'Lucía', 'Susana', 'Rocío', 'Inmaculada'];
 const hi = 'Bienvenida ';
 const greetings = names.map(name => 'Bienvenida ' + name); 
 console.log(greetings);
+
 
 //EJERCICIOS 03 -- Gracias por confiar en nosotros//
 const users = [
@@ -19,10 +21,8 @@ const users = [
   { name: 'Rocío', isPremium: false },
   { name: 'Inmaculada', isPremium: false }
 ];
-
 const premiumGreet = users.map(user => generatePremiumGreet(user));
 console.log(premiumGreet);
-
 //Revisa si la usuaria es premium o no y devuelve el saludo en concordancia
 function generatePremiumGreet(person) {
   let newGreet;
@@ -33,3 +33,7 @@ function generatePremiumGreet(person) {
   }
   return newGreet;
 }
+
+//EJERCICIOS 04 -- Solo los premium//
+const premiumUsers = users.filter(user => user.isPremium === true);
+console.log(premiumUsers);
