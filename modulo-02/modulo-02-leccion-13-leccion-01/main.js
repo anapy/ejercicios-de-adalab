@@ -1,19 +1,19 @@
 'use strict';
 
-//EJERCICIOS 01 -- Inflar las notas //
+//EJERCICIO 01 -- Inflar las notas //
 const marks = [5, 4, 6, 7, 9];
 const newMarks = marks.map(mark => mark + 1);
 console.log(newMarks);
 
 
-//EJERCICIOS 02 -- Saludar es de buena educación //
+//EJERCICIO 02 -- Saludar es de buena educación //
 const names = ['María', 'Lucía', 'Susana', 'Rocío', 'Inmaculada'];
 const hi = 'Bienvenida ';
 const greetings = names.map(name => 'Bienvenida ' + name); 
 console.log(greetings);
 
 
-//EJERCICIOS 03 -- Gracias por confiar en nosotros//
+//EJERCICIO 03 -- Gracias por confiar en nosotros//
 const users = [
   { name: 'María', isPremium: false },
   { name: 'Lucía', isPremium: true },
@@ -34,6 +34,11 @@ function generatePremiumGreet(person) {
   return newGreet;
 }
 
-//EJERCICIOS 04 -- Solo los premium//
+//EJERCICIO 04 -- Solo los premium//
 const premiumUsers = users.filter(user => user.isPremium === true);
 console.log(premiumUsers);
+
+//EJERCICIO 05 -- Los pares pueden entrar//
+const pins = [2389, 2384, 2837, 5232, 8998];
+const allowUsers = pins.filter(pin => pin % 2 === 0);
+console.log(allowUsers);
