@@ -100,6 +100,12 @@ console.log(activeUsers);
 //Nuevo listado
 console.log(usersPass);
 
+//EJERCICIO 11 -- Clasificación de la carrera//
 
 
+//EJERCICIO 12 -- Poniendo orden en nuestros usuarios//
+
+//Ordenar los usuarios en orden alfabético
+
+//Ordenar los usuarios por nº pin
 
