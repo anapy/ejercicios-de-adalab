@@ -1,5 +1,5 @@
 'use strict';
-const selectForm = document.querySelector('.select');
+const selectForm = document.querySelector('.js-select');
 let options = [];
 
 const people = [
@@ -39,14 +39,14 @@ function createPeople() {
 
 function magic(event) {
   options = document.querySelectorAll('.options')
-  console.log(event.currentTarget);
+  console.log(event.Target);
   proof();
   for(let i = 0; i < 3; i++) {
   options[i].addEventListener('change', proof);
   }
 }
 createPeople();
-selectForm.addEventListener('click', magic);
+selectForm.addEventListener('change', magic);
 
 // Recoge los tres botones cuando se da click a cualquiera de ellos
 // for(let i = 0; i < 3; i++) {
