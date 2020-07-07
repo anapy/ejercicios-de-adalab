@@ -54,6 +54,14 @@ const usersPass = [
   { name: 'Rocío', isPremium: false, pin: 5232 },
   { name: 'Inmaculada', isPremium: false, pin: 8998 }
 ];
-
 const usersAllowed = usersPass.filter(userPass => userPass.pin % 2 === 0);
 console.log(usersAllowed);
+
+
+//EJERCICIO 07 -- Los usuarios que pueden entrar//
+const times = [56, 9, 45, 28, 35];
+const sum = times.reduce((acc, number) => acc + number); 
+const media =  sum / times.length;
+console.log(sum);
+
+
