@@ -65,28 +65,28 @@ const media =  sum / times.length;
 console.log(media);
 
 
-// //EJERCICIO 08 -- El ganador de la carrera//
-// const runners = [
-//   { name: 'Gregory Goyle', time: 56 },
-//   { name: 'Nymphadora Tonks', time: 9 },
-//   { name: 'Luna Lovegood', time: 45 },
-//   { name: 'Cedric Diggory', time: 28 },
-//   { name: 'Cho Chang', time: 35 }
-// ];
-// const winner = times.reduce((acc, number) => acc + number); 
+//EJERCICIO 08 -- El ganador de la carrera//
+const runners = [
+  { name: 'Gregory Goyle', time: 56 },
+  { name: 'Nymphadora Tonks', time: 9 },
+  { name: 'Luna Lovegood', time: 45 },
+  { name: 'Cedric Diggory', time: 28 },
+  { name: 'Cho Chang', time: 35 }
+];
+const winner = times.reduce((acc, number) => acc + number); 
 
-// function compare() {
+function compare() {
 
-// }
+}
 
-// //EJERCICIO 09 -- El ganador de los estudiantes//
-// const runners = [
-//   { name: 'Gregory Goyle', time: 56, student: true },
-//   { name: 'Nymphadora Tonks', time: 9, student: false },
-//   { name: 'Luna Lovegood', time: 45, student: true },
-//   { name: 'Cedric Diggory', time: 28, student: true },
-//   { name: 'Cho Chang', time: 35, student: true }
-// ];
+//EJERCICIO 09 -- El ganador de los estudiantes//
+const runners = [
+  { name: 'Gregory Goyle', time: 56, student: true },
+  { name: 'Nymphadora Tonks', time: 9, student: false },
+  { name: 'Luna Lovegood', time: 45, student: true },
+  { name: 'Cedric Diggory', time: 28, student: true },
+  { name: 'Cho Chang', time: 35, student: true }
+];
 
 //EJERCICIO 10 -- Encuentra el usuario//
 //Buscar usuario con problemas
