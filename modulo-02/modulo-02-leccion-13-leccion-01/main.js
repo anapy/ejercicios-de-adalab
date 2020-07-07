@@ -62,6 +62,44 @@ console.log(usersAllowed);
 const times = [56, 9, 45, 28, 35];
 const sum = times.reduce((acc, number) => acc + number); 
 const media =  sum / times.length;
-console.log(sum);
+console.log(media);
+
+
+// //EJERCICIO 08 -- El ganador de la carrera//
+// const runners = [
+//   { name: 'Gregory Goyle', time: 56 },
+//   { name: 'Nymphadora Tonks', time: 9 },
+//   { name: 'Luna Lovegood', time: 45 },
+//   { name: 'Cedric Diggory', time: 28 },
+//   { name: 'Cho Chang', time: 35 }
+// ];
+// const winner = times.reduce((acc, number) => acc + number); 
+
+// function compare() {
+
+// }
+
+// //EJERCICIO 09 -- El ganador de los estudiantes//
+// const runners = [
+//   { name: 'Gregory Goyle', time: 56, student: true },
+//   { name: 'Nymphadora Tonks', time: 9, student: false },
+//   { name: 'Luna Lovegood', time: 45, student: true },
+//   { name: 'Cedric Diggory', time: 28, student: true },
+//   { name: 'Cho Chang', time: 35, student: true }
+// ];
+
+//EJERCICIO 10 -- Encuentra el usuario//
+//Buscar usuario con problemas
+const incidenceUser = usersPass.find(usersPass => usersPass.pin === 5232);
+console.log(incidenceUser);
+//Buscar el index del usuario con problemas
+const incidenceUserIndex = usersPass.findIndex(usersPass => usersPass.pin === 5232);
+const activeUsers = usersPass.splice(3, 1);
+//Elemento eliminado
+console.log(activeUsers);
+//Nuevo listado
+console.log(usersPass);
+
+
 
 
