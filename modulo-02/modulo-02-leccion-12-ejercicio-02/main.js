@@ -37,7 +37,7 @@ function clickHandler(ev) {
 function createElements(place){
   for(let i = 0; i < 3; i++) {
     let item = document.createElement('IMG');
-    item.setAttribute("src", place[i]);
+    item.src = place[i];
     item.setAttribute("width", "250");
     item.setAttribute("height", "200");
     item.classList.add('image');
