@@ -73,20 +73,24 @@ const runners = [
   { name: 'Cedric Diggory', time: 28 },
   { name: 'Cho Chang', time: 35 }
 ];
-const winner = times.reduce((acc, number) => acc + number); 
-
-function compare() {
-
+const winner = function(fasterRunner, runner) {
+  if (runner.time < fasterRunner.time) {
+    return runner;
+  } else {
+    return fasterRunner;
+  }
 }
+const winnerName = runners.reduce(winner);
+console.log(winnerName);
 
 //EJERCICIO 09 -- El ganador de los estudiantes//
-const runners = [
-  { name: 'Gregory Goyle', time: 56, student: true },
-  { name: 'Nymphadora Tonks', time: 9, student: false },
-  { name: 'Luna Lovegood', time: 45, student: true },
-  { name: 'Cedric Diggory', time: 28, student: true },
-  { name: 'Cho Chang', time: 35, student: true }
-];
+// const runners = [
+//   { name: 'Gregory Goyle', time: 56, student: true },
+//   { name: 'Nymphadora Tonks', time: 9, student: false },
+//   { name: 'Luna Lovegood', time: 45, student: true },
+//   { name: 'Cedric Diggory', time: 28, student: true },
+//   { name: 'Cho Chang', time: 35, student: true }
+// ];
 
 //EJERCICIO 10 -- Encuentra el usuario//
 //Buscar usuario con problemas
@@ -104,8 +108,24 @@ console.log(usersPass);
 
 
 //EJERCICIO 12 -- Poniendo orden en nuestros usuarios//
+const people = [
+  { name: 'María', isPremium: false, pin: 2389 },
+  { name: 'Lucía', isPremium: true, pin: 2384 },
+  { name: 'Susana', isPremium: true, pin: 2837 },
+  { name: 'Rocío', isPremium: false, pin: 5232 },
+  { name: 'Inmaculada', isPremium: false, pin: 8998 }
+];
 
 //Ordenar los usuarios en orden alfabético
+const orderedPeople = people.sort((a, b) => {
+  if (a.name < b.name) {
+    return -1;
+  } else {
+    return 1;
+  }
+});
+console.log (orderedPeople);
 
 //Ordenar los usuarios por nº pin
-
+const orderedPin = people.sort((a, b) => a.pin - b.pin);
+console.log (orderedPin);
