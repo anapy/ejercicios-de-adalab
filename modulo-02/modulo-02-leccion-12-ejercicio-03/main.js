@@ -3,7 +3,6 @@ const selectForm = document.querySelector('.js-select');
 const formName = document.querySelector('.js-name');
 const formLastName = document.querySelector('.js-lastName');
 const formPhone = document.querySelector('.js-phone');
-
 const people = [
   {
     name: 'Pepa',
