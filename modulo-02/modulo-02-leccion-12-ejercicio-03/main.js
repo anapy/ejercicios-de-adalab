@@ -1,6 +1,5 @@
 'use strict';
 const selectForm = document.querySelector('.js-select');
-let options = [];
 const formName = document.querySelector('.js-name');
 const formLastName = document.querySelector('.js-lastName');
 const formPhone = document.querySelector('.js-phone');
@@ -30,15 +29,11 @@ function createPeople() {
     let content = document.createTextNode(people[i].name);
     option.appendChild(content);
     option.value = people[i].name;
-    option.classList.add('options');
-    console.log(option);
     selectForm.appendChild(option);
-    //debugger;
   }
 }
 
 function handlerClick(event) {
-  options = document.querySelectorAll('.options')
   let selectedPerson = event.currentTarget.value;
   let select = controlChange(selectedPerson);
   formName.value = people[select].name;
@@ -49,7 +44,6 @@ function handlerClick(event) {
 //Devuelve el índice de la persona que corresponde con la elegida
 function controlChange(per) {
   let number = 0;
-  debugger;
   for(const person of people) {
     if(person.name === per) {
       number = people.indexOf(person);
