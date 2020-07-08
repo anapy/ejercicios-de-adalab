@@ -60,8 +60,3 @@ function controlChange(per) {
 createPeople();
 selectForm.addEventListener('change', handlerClick);
 
-// Recoge los tres botones cuando se da click a cualquiera de ellos
-// for(let i = 0; i < 3; i++) {
-//   options[i].addEventListener('click', createPeople);
-// }
-
