@@ -1,3 +1,4 @@
+'use strict';
 const title = document.querySelector('.js-title');
 const text = document.querySelector('.js-text');
 const notification = document.querySelector('.js-notification');
@@ -14,3 +15,4 @@ if(notification.classList.contains('warning')) {
   text.innerHTML = 'Los datos son correctos';
 }
  
+
