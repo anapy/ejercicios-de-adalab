@@ -3,7 +3,6 @@ class Square {
   constructor(sideLength) {
     this.sideLength = sideLength;
   }
-
   perimeter() {
     const perimeter = 4 * this.sideLength;
     console.log(`El perímetro del cuadrado es de ${perimeter}`);
