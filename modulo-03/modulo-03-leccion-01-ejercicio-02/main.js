@@ -16,3 +16,11 @@ class Square {
 const square = new Square(9);
 square.perimeter();
 square.area();
+
+const square2 = new Square(3);
+square2.perimeter();
+square2.area();
+
+const square3 = new Square(7);
+square3.perimeter();
+square3.area();
