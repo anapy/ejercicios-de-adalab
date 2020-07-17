@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(196, 189, 189);
+}
+
+.App {
+  text-align: center;
+}
+
+.card {
+  height: 400px;
+  width: 500px;
+  border: 2px solid grey;
+  padding: 20px;
+  background-color: white;
+  box-shadow:  3px 3px rgb(105, 103, 103);
+}
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.data {
+  padding: 20px;
+}
+
+.img {
+ border-radius: 50%;
+} 
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.fa-heart {
+  color: brown;
+}
