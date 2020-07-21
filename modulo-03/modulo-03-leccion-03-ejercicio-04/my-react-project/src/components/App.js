@@ -1,12 +1,13 @@
 import React from 'react';
-import RandomCat from './RandomCat';
-//import { ReactComponent } from '*.svg';
+import CatList from './CatList';
+import '../App.css';
+
 
 class App extends React.Component {
   render() {
       return (
     <div className="App">
-      <RandomCat/>
+      <CatList/>
     </div>
     );
   }
