@@ -7,15 +7,13 @@ class App extends React.Component {
 
     const arrayOfItems = [
       {
-        name: 'Cereales con chocolate',
         description: 'Cereales rellenos de chocolate',
         quantity: 2,
         category: 'Cereales',
-        price: 5
+        price: 'hola'
       },
       {
         name: 'Hamburguesa con queso',
-        description: 'Hamburguesa rica y saludable',
         quantity: 1,
         category: 'Fast-food',
         price: 15
@@ -51,6 +49,9 @@ class App extends React.Component {
 }
 
 export default App;
+
+
+
 
 // //punto b
 // let items = [];
