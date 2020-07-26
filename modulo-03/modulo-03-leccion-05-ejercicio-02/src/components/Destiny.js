@@ -17,7 +17,6 @@ class Destiny extends React.Component {
           <option>Tokio</option>
         </select>
       </div>
-    
     )
   }
 }
