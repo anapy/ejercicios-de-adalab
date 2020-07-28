@@ -23,11 +23,11 @@ class Form  extends React.Component {
         </label>
         <label htmlFor="description">
           Language:
-        <select id="language" onClick={this.handleChangeForm}>
-          <option value="Spanish">Spanish</option>
-          <option value="English">English</option>
-          <option value="Portuguese">Portuguese</option>
-        </select>
+          <select id="language" onClick={this.handleChangeForm}>
+            <option value="Spanish">Spanish</option>
+            <option value="English">English</option>
+            <option value="Portuguese">Portuguese</option>
+          </select>
         </label>
         <input type="submit" value="Enviar" />
       </form>
