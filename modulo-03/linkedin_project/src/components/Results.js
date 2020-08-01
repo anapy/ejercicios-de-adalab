@@ -9,12 +9,11 @@ class Results extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     const results = this.props.userInfo.users.map((user, index) => {
       return (
       <li key={index}>
         <h3>{user.name}</h3>
-        <div><img src={user.photo} alt={user.name}/></div>
+        <div><img src={user.phooto} alt={user.name}/></div>
         <p>{user.city}</p>
         <p>{user.age}</p>
       </li>

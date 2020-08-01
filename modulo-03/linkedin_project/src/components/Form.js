@@ -6,17 +6,16 @@ class Form extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
-    this.props.handleInfo();
+  handleClick(ev) {
+    this.props.handleCities(ev.currentTarget.value);
   }
 
   render() {
-
     const cities = this.props.userInfo.users.map((user, index) => {
       return (
        <div>
         <label htmlform="location">
-          <input name="location" type="checkbox" id={index} value={user.city}/>
+          <input name="location" type="checkbox" id={index} value={user.city} onClick={this.handleClick}/>
           {user.city}
         </label>
       </div>
@@ -33,6 +32,7 @@ class Form extends React.Component {
       </div>
       )
     })
+
     return (
     <form className="form">
       <fieldset>
@@ -41,7 +41,18 @@ class Form extends React.Component {
       </fieldset>
       <fieldset>
         <legend>Gender</legend>
-        {genders}
+        <div>
+        <label htmlform="gender">
+          <input name="location" type="checkbox" id="male" value="male"/>
+          Male
+        </label>
+      </div>
+      <div>
+        <label htmlform="gender">
+          <input name="location" type="checkbox" id="female" value="female"/>
+          Female
+        </label>
+      </div>
       </fieldset>
     </form>
     )

@@ -5,16 +5,18 @@ import getDataFromApi from '../services/getDataFromApi';
 import '../stylesheets/App.css';
 
 class App extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
-    this.getInfoFromApi = this.getInfoFromApi.bind(this);
     this.state = {
       users: [],
       cities: [],
       gender: []
     }
+    this.getInfoFromApi = this.getInfoFromApi.bind(this);
+    this.handleCities = this.handleCities.bind(this);
     this.getInfoFromApi();
   }
+
   getInfoFromApi () {
     getDataFromApi()
     .then(data =>
@@ -36,20 +38,38 @@ class App extends React.Component {
   }
 
   handleCities(city) {
+    console.log(this.state);
+    this.setState(() => { return {
+      users: [...this.state.users, this.state.users.filter(user => user.city === city)]
+    }
   }
+    )
+    console.log(this.state.users);
+  }
+    // }
+    //   this.setState(() => {
+    //   return {
+    //     users: [...this.state.users, usersByCities]
+    // };
+    // }
+  //   };
+    
+    
+  //   console.log(this.state.users);
+  // }
 
   render() {
     return (
-    <div className="App">
-      <div>
-        <Form 
-        handleInfo={this.getInfoFromApi}
-        userInfo={this.state}
-        />
-      </div>
-      <div>
-        <Results userInfo={this.state} />
-      </div>
+      <div className="App">
+        <div>
+          <Form
+          handleCities={this.handleCities}
+          userInfo={this.state}
+          />
+        </div>
+        <div>
+          <Results userInfo={this.state} />
+        </div>
       </div>
     )
   }
