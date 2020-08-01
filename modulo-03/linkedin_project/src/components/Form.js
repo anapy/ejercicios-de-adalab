@@ -11,37 +11,37 @@ class Form extends React.Component {
   }
 
   render() {
+
+    const cities = this.props.userInfo.users.map((user, index) => {
+      return (
+       <div>
+        <label htmlform="location">
+          <input name="location" type="checkbox" id={index} value={user.city}/>
+          {user.city}
+        </label>
+      </div>
+      )
+    })
+
+    const genders = this.props.userInfo.users.map((user, index) => {
+      return (
+       <div>
+        <label htmlform="gender">
+          <input name="location" type="checkbox" id={index} value={user.gender}/>
+          {user.gender}
+        </label>
+      </div>
+      )
+    })
     return (
     <form className="form">
       <fieldset>
         <legend>Location</legend>
-          <div>
-          <label htmlform="location" onClick={this.handleClick}>
-            <input name="location" type="checkbox" id="location" value="NY"/>
-            NY
-          </label>
-        </div>
-        <div>
-          <label htmlform="location">
-            <input name="location" type="checkbox" id="location" value="Florida"/>
-            Florida
-          </label>
-        </div>
+        {cities}
       </fieldset>
       <fieldset>
         <legend>Gender</legend>
-        <div>
-          <label htmlform="location">
-            <input name="location" type="checkbox" id="location" value="NY"/>
-            male
-          </label>
-        </div>
-        <div>
-          <label htmlform="location">
-            <input name="location" type="checkbox" id="location" value="Florida"/>
-            female
-          </label>
-        </div>
+        {genders}
       </fieldset>
     </form>
     )

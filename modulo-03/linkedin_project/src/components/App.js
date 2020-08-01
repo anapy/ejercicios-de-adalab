@@ -9,7 +9,9 @@ class App extends React.Component {
     super(props);
     this.getInfoFromApi = this.getInfoFromApi.bind(this);
     this.state = {
-      users: []
+      users: [],
+      cities: [],
+      gender: []
     }
     this.getInfoFromApi();
   }
@@ -27,28 +29,23 @@ class App extends React.Component {
       }
       //se repite 50 veces en el estado, ¿es eficiente o hay otra forma de hacerlo?
     return {
-      users: [...this.state.users, newUser]
+      users: [...this.state.users, newUser],
     }
-    })
-    )
+    }))
     );
   }
 
-  // saveDataState () {
-  //   this.setState ({
-  //     name: data.name,
-  //     photo: data.photo,
-  //     city: data.city,
-  //     age: data.age,
-  //     gender: data.gender
-  //   }),
-  // }
+  handleCities(city) {
+  }
 
   render() {
     return (
     <div className="App">
       <div>
-        <Form handleInfo={this.getInfoFromApi}/>
+        <Form 
+        handleInfo={this.getInfoFromApi}
+        userInfo={this.state}
+        />
       </div>
       <div>
         <Results userInfo={this.state} />
