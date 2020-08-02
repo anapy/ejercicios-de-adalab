@@ -14,6 +14,8 @@ class App extends React.Component {
     }
     this.getInfoFromApi = this.getInfoFromApi.bind(this);
     this.handleCities = this.handleCities.bind(this);
+    this.handleGenders = this.handleGenders.bind(this);
+
     this.getInfoFromApi();
   }
 
@@ -30,40 +32,40 @@ class App extends React.Component {
         gender: data.gender
       }
       //se repite 50 veces en el estado, ¿es eficiente o hay otra forma de hacerlo?
-    return {
+      return {
       users: [...this.state.users, newUser],
     }
-    }))
+    })),
+    this.inicialState = this.state.users
     );
   }
 
   handleCities(city) {
-    console.log(this.state);
-    this.setState(() => { return {
-      users: [...this.state.users, this.state.users.filter(user => user.city === city)]
-    }
+    this.setState(() => {
+      const usersByCity = this.state.users.filter(user => user.city === city);
+      return {
+      users: usersByCity
+      }
+    })
   }
-    )
-    console.log(this.state.users);
+
+  handleGenders(gender) {
+    this.setState(() => {
+      const usersByGender = this.state.users.filter(user => user.gender === gender);
+      return {
+      users: usersByGender
+      }
+    })
   }
-    // }
-    //   this.setState(() => {
-    //   return {
-    //     users: [...this.state.users, usersByCities]
-    // };
-    // }
-  //   };
-    
-    
-  //   console.log(this.state.users);
-  // }
 
   render() {
+    this.inicialState = this.state.users
     return (
       <div className="App">
         <div>
           <Form
           handleCities={this.handleCities}
+          handleGenders={this.handleGenders}
           userInfo={this.state}
           />
         </div>

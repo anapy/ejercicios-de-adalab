@@ -3,11 +3,16 @@ import React from 'react';
 class Form extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
+    this.handleCityClick = this.handleCityClick.bind(this);
+    this.handleGenderClick = this.handleGenderClick.bind(this);
   }
 
-  handleClick(ev) {
+  handleCityClick(ev) {
     this.props.handleCities(ev.currentTarget.value);
+  }
+
+  handleGenderClick(ev) {
+    this.props.handleGenders(ev.currentTarget.value);
   }
 
   render() {
@@ -15,7 +20,7 @@ class Form extends React.Component {
       return (
        <div>
         <label htmlform="location">
-          <input name="location" type="checkbox" id={index} value={user.city} onClick={this.handleClick}/>
+          <input name="location" type="checkbox" id={index} value={user.city} onClick={this.handleCityClick}/>
           {user.city}
         </label>
       </div>
@@ -26,7 +31,7 @@ class Form extends React.Component {
       return (
        <div>
         <label htmlform="gender">
-          <input name="location" type="checkbox" id={index} value={user.gender}/>
+          <input name="location" type="checkbox" id={index} value={user.gender} onClick={this.handleGenderClick}/>
           {user.gender}
         </label>
       </div>
@@ -41,18 +46,7 @@ class Form extends React.Component {
       </fieldset>
       <fieldset>
         <legend>Gender</legend>
-        <div>
-        <label htmlform="gender">
-          <input name="location" type="checkbox" id="male" value="male"/>
-          Male
-        </label>
-      </div>
-      <div>
-        <label htmlform="gender">
-          <input name="location" type="checkbox" id="female" value="female"/>
-          Female
-        </label>
-      </div>
+        {genders}
       </fieldset>
     </form>
     )
